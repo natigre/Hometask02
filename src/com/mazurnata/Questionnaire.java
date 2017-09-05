@@ -14,6 +14,16 @@ public class Questionnaire {
         int age = scanner.nextInt();
         System.out.println("What is your hobby?");
         String hobby = scanner.nextLine();
-        System.out.println();
+        System.out.println("Thank you");
+
+        printTabularInput(name, city, age, hobby);
+        System.out.print("\n--------------------------\n");
     }
+
+    private void printTabularInput(String name, String city, int age,String hobby) {
+        System.out.println("Name: " + name);
+        System.out.println("City: " + city);
+        System.out.println("Age: " + age);
+        System.out.println("Hobby: " + hobby);
     }
+}
