@@ -23,6 +23,7 @@ public class Questionnaire {
         System.out.print("--------------------------\n");
         printTextInput(name, city, age, hobby);
         System.out.print("--------------------------\n");
+        printOtherInput(name, city, age, hobby);
     }
 
     private void printTabularInput(String name, String city, int age,String hobby) {
@@ -35,5 +36,12 @@ public class Questionnaire {
     private void printTextInput(String name, String city, int age,String hobby) {
         System.out.println("A man named" + name + " lives in the city " + city);
         System.out.println("This person " + age + " years and he loves to engage in " + hobby);
+    }
+
+    private void printOtherInput(String name, String city, int age,String hobby) {
+        System.out.println(name + "- name");
+        System.out.println(city + "- city");
+        System.out.println(age + "- age");
+        System.out.println(hobby + "- hobby");
     }
 }
